@@ -1,38 +1,121 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(to right, #1e1e2f, #2d2d44);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255,255,255,0.1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu span {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.main-layout {
+  display: flex;
+  padding: 20px;
+}
+
+.shoe-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  gap: 20px;
+}
+
+.shoe-card {
+  background: linear-gradient(to bottom, #ff9a9e, #fad0c4);
+  padding: 15px;
+  border-radius: 15px;
+  text-align: center;
+  color: black;
+}
+
+.shoe-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.shoe-card button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  border: none;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+
+.cart {
+  margin-left: 40px;
+  width: 260px;
+  background: rgba(255,255,255,0.1);
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  color: black;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.cart-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 15px;
+  border-radius: 6px;
+}
+
+.cart-details {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.cart-total {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.cart-items {
+  flex: 2;
+}
+
+
+.price {
+  margin: 4px 0;
+}
+
+.qty-box {
+  display: flex;
+  align-items: center;
+  margin-top: 6px;
+}
+
+.qty-box button {
+  padding: 3px 8px;
+  border: 1px solid #ccc;
+  background: #f0f0f0;
+  cursor: pointer;
+}
+
+.qty-box span {
+  margin: 0 8px;
+  font-weight: bold;
+}
+
+.qty-number {
+  margin: 0 10px;
 }
